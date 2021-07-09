@@ -1,0 +1,104 @@
+﻿@model IEnumerable<School_Project.Entity.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="width:1050px; margin-top:70px ; margin-left:300px;">
+    <p style="margin-left:10px;">
+        <a asp-action="Create">Yeni Ürün Ekle</a>
+    </p>
+    <table class="table" style="table-layout:auto">
+        <thead>
+            <tr style="text-align:center" >
+                <th style="font-weight:bold; padding:20px;" >
+                    @Html.DisplayNameFor(model => model.Barkod)
+                </th>
+                <th style="font-weight:bold; padding:20px;" >
+                    @Html.DisplayNameFor(model => model.ModelKod)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.Marka)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.ÜrünAd)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.Acıklama)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.PiyasaFiyat)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.TrendyolFiyat)
+                </th>
+                <th style="font-weight:bold ; padding:20px;">
+                    @Html.DisplayNameFor(model => model.StokAdedi)
+                </th>
+                <th style="font-weight:bold; padding:20px;">
+                    @Html.DisplayNameFor(model => model.StokKodu)
+                </th>
+                <th style="font-weight:bold; padding:20px;">
+                    @Html.DisplayNameFor(model => model.GörselLink)
+                </th>
+                <th style="font-weight:bold; padding:20px;" >
+                    @Html.DisplayNameFor(model => model.AraçMarka)
+                </th>
+                <th style="font-weight:bold; padding:20px;">
+                    @Html.DisplayNameFor(model => model.AraçModel)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="text-align:center;">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Barkod)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModelKod)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Marka)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ÜrünAd)
+                    </td>
+                    <td style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:10vw;">
+                        @Html.DisplayFor(modelItem => item.Acıklama)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PiyasaFiyat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TrendyolFiyat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StokAdedi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StokKodu)
+                    </td>
+                    <td style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:10vw;">
+                        @Html.DisplayFor(modelItem => item.GörselLink)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AraçMarka)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AraçModel)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Düzenle</a>
+                        <a asp-action="Details" asp-route-id="@item.ID">Detaylar</a>
+                        <a href="/Products/Delete/@item.ID">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

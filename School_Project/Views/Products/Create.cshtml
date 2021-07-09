@@ -1,0 +1,109 @@
+﻿@model School_Project.Entity.Product
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h4>Ürün Ekle</h4>
+<hr />
+<div style="margin-left:500px; margin-top:50px;" class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Barkod" class="control-label"></label>
+                <input asp-for="Barkod" autocomplete="off" class="form-control" />
+                <span asp-validation-for="Barkod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModelKod" class="control-label"></label>
+                <input asp-for="ModelKod" autocomplete="off" class="form-control" />
+                <span asp-validation-for="ModelKod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Marka" class="control-label"></label>
+                <input asp-for="Marka" autocomplete="off" class="form-control" />
+                <span asp-validation-for="Marka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kategori" class="control-label"></label><br />
+                <input asp-for="Kategori" autocomplete="off" value="  3015" style="color:black" readonly="readonly" class="form-control" />
+                <span asp-validation-for="Kategori" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParaBirimi" class="control-label"></label><br />
+                <input asp-for="ParaBirimi" autocomplete="off" value="  TRY" style="color:black" readonly="readonly" class="form-control" />
+                <span asp-validation-for="ParaBirimi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ÜrünAd" class="control-label"></label>
+                <input asp-for="ÜrünAd" autocomplete="off" class="form-control" />
+                <span asp-validation-for="ÜrünAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acıklama" class="control-label"></label>
+                <input asp-for="Acıklama" autocomplete="off" class="form-control" />
+                <span asp-validation-for="Acıklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PiyasaFiyat" class="control-label"></label>
+                <input asp-for="PiyasaFiyat" autocomplete="off" class="form-control" />
+                <span asp-validation-for="PiyasaFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrendyolFiyat" class="control-label"></label>
+                <input asp-for="TrendyolFiyat" autocomplete="off" class="form-control" />
+                <span asp-validation-for="TrendyolFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StokAdedi" class="control-label"></label>
+                <input asp-for="StokAdedi" autocomplete="off" class="form-control" />
+                <span asp-validation-for="StokAdedi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StokKodu" class="control-label"></label>
+                <input asp-for="StokKodu" autocomplete="off" class="form-control" />
+                <span asp-validation-for="StokKodu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KDVOranı" class="control-label"></label><br />
+                <input asp-for="KDVOranı" autocomplete="off" value="  18%" style="color:black" readonly="readonly" class="form-control" />
+                <span asp-validation-for="KDVOranı" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Desi" class="control-label"></label><br />
+                <input asp-for="Desi" value="  1" style="color:black" autocomplete="off" readonly="readonly" class="form-control" />
+                <span asp-validation-for="Desi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GörselLink" class="control-label"></label>
+                <input asp-for="GörselLink" autocomplete="off" class="form-control" />
+                <span asp-validation-for="GörselLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevkiyatSüresi" class="control-label"></label><br />
+                <input asp-for="SevkiyatSüresi" value="  3" style="color:black" autocomplete="off" readonly="readonly" class="form-control" />
+                <span asp-validation-for="SevkiyatSüresi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AraçMarka" class="control-label"></label>
+                <input asp-for="AraçMarka" autocomplete="off" class="form-control" />
+                <span asp-validation-for="AraçMarka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AraçModel" class="control-label"></label>
+                <input asp-for="AraçModel" autocomplete="off" class="form-control" />
+                <span asp-validation-for="AraçModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Geri Dön</a>
+</div>
+

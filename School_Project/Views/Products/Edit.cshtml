@@ -1,0 +1,117 @@
+﻿@model School_Project.Entity.Product
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Barkod" class="control-label"></label>
+                <input asp-for="Barkod" class="form-control" />
+                <span asp-validation-for="Barkod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModelKod" class="control-label"></label>
+                <input asp-for="ModelKod" class="form-control" />
+                <span asp-validation-for="ModelKod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Marka" class="control-label"></label>
+                <input asp-for="Marka" class="form-control" />
+                <span asp-validation-for="Marka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kategori" class="control-label"></label>
+                <input asp-for="Kategori" class="form-control" />
+                <span asp-validation-for="Kategori" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParaBirimi" class="control-label"></label>
+                <input asp-for="ParaBirimi" class="form-control" />
+                <span asp-validation-for="ParaBirimi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ÜrünAd" class="control-label"></label>
+                <input asp-for="ÜrünAd" class="form-control" />
+                <span asp-validation-for="ÜrünAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acıklama" class="control-label"></label>
+                <input asp-for="Acıklama" class="form-control" />
+                <span asp-validation-for="Acıklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PiyasaFiyat" class="control-label"></label>
+                <input asp-for="PiyasaFiyat" class="form-control" />
+                <span asp-validation-for="PiyasaFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrendyolFiyat" class="control-label"></label>
+                <input asp-for="TrendyolFiyat" class="form-control" />
+                <span asp-validation-for="TrendyolFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StokAdedi" class="control-label"></label>
+                <input asp-for="StokAdedi" class="form-control" />
+                <span asp-validation-for="StokAdedi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StokKodu" class="control-label"></label>
+                <input asp-for="StokKodu" class="form-control" />
+                <span asp-validation-for="StokKodu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KDVOranı" class="control-label"></label>
+                <input asp-for="KDVOranı" class="form-control" />
+                <span asp-validation-for="KDVOranı" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Desi" class="control-label"></label>
+                <input asp-for="Desi" class="form-control" />
+                <span asp-validation-for="Desi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GörselLink" class="control-label"></label>
+                <input asp-for="GörselLink" class="form-control" />
+                <span asp-validation-for="GörselLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevkiyatSüresi" class="control-label"></label>
+                <input asp-for="SevkiyatSüresi" class="form-control" />
+                <span asp-validation-for="SevkiyatSüresi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WebColor" class="control-label"></label>
+                <input asp-for="WebColor" class="form-control" />
+                <span asp-validation-for="WebColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AraçMarka" class="control-label"></label>
+                <input asp-for="AraçMarka" class="form-control" />
+                <span asp-validation-for="AraçMarka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AraçModel" class="control-label"></label>
+                <input asp-for="AraçModel" class="form-control" />
+                <span asp-validation-for="AraçModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

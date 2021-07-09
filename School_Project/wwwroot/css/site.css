@@ -1,0 +1,171 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 30px;
+    width: 270px;
+    position: absolute;
+    margin-top: 100px;
+    top: 0;
+    bottom: 0;
+    box-shadow: rgba(0,0,0,.5)
+}
+
+    nav ul {
+        white-space: nowrap;
+        position: relative;
+        list-style-type: none;
+        background-color: lightgray;
+        width: auto;
+    }
+
+        nav ul li a {
+            display: flex;
+            align-items: center;
+            font-family: Arial;
+            font-size: 1.15em;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #000;
+            padding: 10px 30px;
+            height: 40px;
+            transition: .5s ease;
+            border-radius: 10px 10px;
+        }
+
+            nav ul li a:hover {
+                text-decoration: none;
+                background-color: darkblue;
+                color: #fff;
+            }
+
+        nav ul ul {
+            position: absolute;
+            left: 270px;
+            width: auto;
+            display: none;
+            background-color: lightgray;
+            border-radius: 10px 10px;
+            top: 0;
+        }
+
+        nav ul .dropdown {
+            position: relative;
+        }
+
+            nav ul .dropdown:hover > ul {
+                display: initial;
+            }
+
+        nav ul .dropdown_2 ul {
+            display: none;
+            position: absolute;
+            left: 270px;
+            top: 0;
+        }
+
+        nav ul .dropdown_2:hover ul {
+            display: initial;
+        }
+
+        nav ul .dropdown_3 ul {
+            display: none;
+            position: absolute;
+            left: 270px;
+            top: 40px;
+        }
+
+        nav ul .dropdown_3:hover ul {
+            display: initial;
+        }
+
+        nav ul .dropdown_4 ul {
+            display: none;
+            position: absolute;
+            left: 270px;
+            top: 80px;
+        }
+
+        nav ul .dropdown_4:hover ul {
+            display: initial;
+        }
+
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
